@@ -1,11 +1,13 @@
-const signUpButton = document.getElementById('signUp');
-        const signInButton = document.getElementById('signIn');
-        const container = document.getElementById('container');
+// index.js
 
-        signUpButton.addEventListener('click', () => {
-            container.classList.add('right-panel-active');
-        });
+document.getElementById("practiceBtn").onclick = function() {
+    window.location.href = "Luyentap/luyentap.html";
+};
 
-        signInButton.addEventListener('click', () => {
-            container.classList.remove('right-panel-active');
-        });
+document.getElementById("midTermBtn").onclick = function() {
+    window.location.href = "Giuaky/giuaky.html";
+};
+
+document.getElementById("endTermBtn").onclick = function() {
+    window.location.href = "Cuoiky/cuoiky.html";
+};

@@ -1,0 +1,50 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    position: relative; /* Thêm thuộc tính position và set relative */
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3d8b40;
+}
+
+.clock {
+    position: absolute;
+    top: 20px; /* Điều chỉnh top cho đồng hồ */
+    right: 20px; /* Điều chỉnh right cho đồng hồ */
+}

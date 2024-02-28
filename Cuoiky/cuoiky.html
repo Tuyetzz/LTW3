@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Xin chào</p>
+    
+    <button onclick="goBack()">Trở lại trang chính</button>
+
+    <h2>Danh sách các bài thi có thể làm ngay lập tức</h2>
+    
+    <table id="immediateExamList">
+        <thead>
+            <tr>
+                <th>Số thứ tự</th>
+                <th>Tên môn học</th>
+                <th>Bắt đầu làm bài</th>
+            </tr>
+        </thead>
+        <tbody id="immediateExamListBody">
+            <!-- Các hàng trong bảng sẽ được tạo bằng JavaScript -->
+        </tbody>
+    </table>
+
+    <h2>Danh sách bài thi mở theo thời gian (8h, 10h)</h2>
+    
+    <table id="timedExamList">
+        <thead>
+            <tr>
+                <th>Số thứ tự</th>
+                <th>Tên môn học</th>
+                <th>Thời gian mở</th>
+                <th>Bắt đầu làm bài</th>
+            </tr>
+        </thead>
+        <tbody id="timedExamListBody">
+            <!-- Các hàng trong bảng sẽ được tạo bằng JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>

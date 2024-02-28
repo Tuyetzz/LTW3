@@ -1,0 +1,69 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Xin chào</p>
+    
+    <button onclick="goBack()">Trở lại trang chính</button>
+
+    <div id="clock" class="clock"></div> <!-- Thêm đồng hồ vào đây -->
+
+    <br> <br>
+    <div id="searchSection">
+        <label for="searchBySubject">Theo môn thi:</label>
+        <select id="searchBySubject" name="searchBySubject">
+            <option value="Toán">Toán</option>
+            <option value="Văn">Văn</option>
+            <option value="Anh">Anh</option>
+            <option value="Lịch Sử">Lịch Sử</option>
+            <option value="Địa lý">Địa lý</option>
+        </select>
+        <label for="searchByStatus">Theo trạng thái:</label>
+        <select id="searchByStatus" name="searchByStatus">
+            <option value="OK">Làm được ngay</option>
+            <option value="8h">8h</option>
+            <option value="10h">10h</option>
+        </select>
+        <input type="submit" value="Tìm kiếm">
+    </div>
+
+    <h2>Danh sách các bài thi có thể làm ngay lập tức</h2>
+    
+    <table id="immediateExamList">
+        <thead>
+            <tr>
+                <th>Số thứ tự</th>
+                <th>Tên môn học</th>
+                <th>Bắt đầu làm bài</th>
+            </tr>
+        </thead>
+        <tbody id="immediateExamListBody">
+            <!-- Các hàng trong bảng sẽ được tạo bằng JavaScript -->
+        </tbody>
+    </table>
+
+    <h2>Danh sách bài thi mở theo thời gian (8h, 10h)</h2>
+    
+    <table id="timedExamList">
+        <thead>
+            <tr>
+                <th>Số thứ tự</th>
+                <th>Tên môn học</th>
+                <th>Thời gian mở</th>
+                <th>Bắt đầu làm bài</th>
+            </tr>
+        </thead>
+        <tbody id="timedExamListBody">
+            <!-- Các hàng trong bảng sẽ được tạo bằng JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
